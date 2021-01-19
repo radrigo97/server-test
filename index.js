@@ -12,7 +12,10 @@ function home(req,res){
 }
 
 function info(req,res){
-    res.send('info')
+    const a = 5;
+    const b = Math.random()
+    const c = a + b
+    res.send('info' + c)
 }
 
 app.listen(PORT,()=> {

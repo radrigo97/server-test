@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-import-export">
+    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-body-parser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todo-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +47,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\reactproject\server-test\src\module\info" />
+      <recent name="C:\reactproject\server-test\src\module\home" />
+      <recent name="C:\reactproject\server-test\src\module\core" />
       <recent name="C:\reactproject\server-test\src" />
     </key>
     <key name="es6.move.members.recent.items">
@@ -55,7 +57,7 @@
       <recent name="C:\reactproject\server-test\src\home.js" />
     </key>
   </component>
-  <component name="RunManager" selected="Attach to Node.js/Chrome.Debug">
+  <component name="RunManager" selected="npm.start">
     <configuration name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
       <method v="2" />
     </configuration>
@@ -112,7 +114,11 @@
       <workItem from="1611161084837" duration="338000" />
       <workItem from="1611162283432" duration="14000" />
       <workItem from="1611190781371" duration="635000" />
-      <workItem from="1611204258117" duration="3436000" />
+      <workItem from="1611204258117" duration="3609000" />
+      <workItem from="1611219401062" duration="3879000" />
+      <workItem from="1611232615436" duration="3101000" />
+      <workItem from="1611323469973" duration="1312000" />
+      <workItem from="1611331682117" duration="946000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -156,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611161095287</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Server-body-parser">
+      <created>1611209522467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611209522467</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +192,8 @@
     <MESSAGE value="Server-babel" />
     <MESSAGE value="Server-json" />
     <MESSAGE value="Server-import-export" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server-import-export" />
+    <MESSAGE value="Server-body-parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server-body-parser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -188,11 +202,6 @@
           <url>file://$PROJECT_DIR$/.eslintrc</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/info.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

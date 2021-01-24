@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import info from './info';
 
-const infoRouter = Router();
+const router = Router();
 
-infoRouter.post('/', info);
+router.post('/', info);
 
-export default infoRouter;
+export default router;

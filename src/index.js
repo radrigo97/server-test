@@ -4,10 +4,12 @@ import logger from './module/core/logger';
 import parseResponse from './module/core/parseResponse';
 import cors from './module/core/cors';
 import routes from './module/core/routes';
+import dbConnect from './module/core/db';
 
 const app = express();
 const PORT = 5000;
 
+dbConnect();
 logger(app);
 parseResponse(app);
 cors(app);

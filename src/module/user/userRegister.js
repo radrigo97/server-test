@@ -6,7 +6,15 @@ export default function userRegister(req, res) {
     password: req.body.password,
   });
 
-  newUser.save()
-
-  res.status(200).json('userRegister complete');
+  newUser
+    .save()
+    .then(() => {
+      res.status(200).json('User created!');
+    })
+    .catch(() => {
+      res.status(400).json('User not created!');
+    })
+    .finally(() => {
+      console.log('END');
+    });
 }

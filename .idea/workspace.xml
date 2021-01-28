@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-userDeleteAll">
+    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-baseSchemaCreate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/base/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/core/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/core/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/user/userRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/user/userRegister.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/user/userUpdateById.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/user/userUpdateById.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/base/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/base/Routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +132,7 @@
       <workItem from="1611619809433" duration="8689000" />
       <workItem from="1611643119893" duration="6497000" />
       <workItem from="1611710421734" duration="1561000" />
-      <workItem from="1611811778806" duration="8808000" />
+      <workItem from="1611811778806" duration="9441000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -278,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611646505735</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Server-userDeleteAll">
+      <created>1611830186526</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611830186526</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Server-baseSchemaCreate">
+      <created>1611830214971</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611830214971</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +318,8 @@
     <MESSAGE value="Server-userAddDB" />
     <MESSAGE value="Server-userGetById" />
     <MESSAGE value="Server-userDeleteAll" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server-userDeleteAll" />
+    <MESSAGE value="Server-baseSchemaCreate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server-baseSchemaCreate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

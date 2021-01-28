@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-userDeleteAll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/base/Routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/base/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/base/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/core/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/core/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/user/userRegister.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/user/userRegister.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/user/userUpdateById.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/user/userUpdateById.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +136,7 @@
       <workItem from="1611619809433" duration="8689000" />
       <workItem from="1611643119893" duration="6497000" />
       <workItem from="1611710421734" duration="1561000" />
+      <workItem from="1611811778806" duration="8808000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>

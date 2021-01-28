@@ -1,12 +1,11 @@
-import User from './Model';
+import Base from './Model';
 
-export default function create(req, res) {
-  const newBase = new User({
-    email: req.body.email,
-    password: req.body.password,
+export default function baseCreate(req, res) {
+  const newBase = new Base({
+    title: req.body.title,
   });
 
-  newUser
+  newBase
     .save()
     .then(() => {
       res.status(200).json('User created!');
@@ -18,5 +17,3 @@ export default function create(req, res) {
       console.log('END');
     });
 }
-
-s

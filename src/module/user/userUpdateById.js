@@ -3,8 +3,6 @@ import User from './Model';
 export default function userUpdateById(req, res) {
   const reqById = req.params.userId;
 
-  delete req.body.password;
-
   User.updateOne({ _id: reqById }, req.body)
     .exec()
     .then((result) => {

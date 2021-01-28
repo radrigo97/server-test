@@ -1,6 +1,6 @@
 import Base from './Model';
 
-export default function baseDeleteAll(req, res) {
+export default function deleteAll(req, res) {
   Base.deleteMany()
     .exec()
     .then((result) => {

@@ -1,6 +1,6 @@
 import Base from './Model';
 
-export default function baseCreate(req, res) {
+export default function create(req, res) {
   const newBase = new Base({
     title: req.body.title,
   });

@@ -1,18 +1,18 @@
 import { Router } from 'express';
-import baseCreate from './create';
-import baseDeleteAll from './deleteAll';
-import baseGetAll from './baseGetAll';
-import baseGetById from './baseGetById';
-import baseUpdateById from './baseUpdateById';
-import baseDeleteById from './baseDeleteById';
+import deleteById from './deleteById';
+import search from './search';
+import getById from './getById';
+import updateById from './updateById';
+import create from './create';
+import deleteAll from './deleteAll';
 
 const router = Router();
 
-router.post('/', baseCreate);
-router.delete('/', baseDeleteAll);
-router.get('/', baseGetAll);
-router.get('/:baseId', baseGetById);
-router.patch('/:baseId', baseUpdateById);
-router.delete('/:baseId', baseDeleteById);
+router.post('/', create);
+router.delete('/', deleteAll);
+router.get('/', search);
+router.get('/:baseId', getById);
+router.patch('/:baseId', updateById);
+router.delete('/:baseId', deleteById);
 
 export default router;

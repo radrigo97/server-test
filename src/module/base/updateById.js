@@ -1,6 +1,6 @@
 import Base from './Model';
 
-export default function baseUpdateById(req, res) {
+export default function updateById(req, res) {
   const reqById = req.params.baseId;
 
   Base.updateOne({ _id: reqById }, req.body)

@@ -2,8 +2,8 @@ import Book from './Model';
 
 export default function create(req, res) {
   const newBook = new Book({
-    title: req.body.title,
-  });
+
+  })
 
   newBook
     .save()

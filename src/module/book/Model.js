@@ -8,6 +8,9 @@ const Model = new Schema(
       type: String,
       required: true,
     },
+    author: [{
+
+    }],
   },
   { timestamps: {} }
 );

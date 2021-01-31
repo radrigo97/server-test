@@ -6,22 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-essenceBook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/Model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/deleteAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/deleteById.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/getById.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/base/updateById.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/Model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/Routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/create.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/deleteAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/deleteById.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/getById.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/updateById.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +137,10 @@
       <workItem from="1611811778806" duration="15356000" />
       <workItem from="1611883842298" duration="4644000" />
       <workItem from="1611940735637" duration="32000" />
-      <workItem from="1611990747956" duration="8744000" />
+      <workItem from="1611990747956" duration="13437000" />
+      <workItem from="1612031756476" duration="599000" />
+      <workItem from="1612071626384" duration="594000" />
+      <workItem from="1612114853005" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -337,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611940750792</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Server-essenceBook">
+      <created>1612008479211</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1612008479211</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

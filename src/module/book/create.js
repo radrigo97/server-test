@@ -1,21 +1,25 @@
 import Book from './Model';
-import Author from './Model';
+import Author from '../author/Model';
+import mongoose from 'mongoose';
 
 export default function create(req, res) {
+  const _id = mongoose.Schema.ObjectId;
   const newBook = new Book({
-    title: req.body.title,
+    _id,
+    name: req.body.name,
     author: req.body.author,
   });
 
+  console.log(req.body.author)
+
   req.body.author.forEach((author) => {
-    Author.updateOne({ _id: author })
+    Author.findById(author)
       .exec()
-      .then((result) => {
-        res.status(200).json(result);
+      .then((doc) => {
+        console.log(doc);
       })
-      .catch((error) => {
-        console.log(error);
-        res.status(400).json('update error');
+      .catch((err) => {
+        console.log(err);
       });
   });
 

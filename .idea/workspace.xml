@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAftodAddBook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/author/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/author/Model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/book/updateById.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/updateById.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <workItem from="1612148091187" duration="12000" />
       <workItem from="1612148118852" duration="4588000" />
       <workItem from="1612178051664" duration="2620000" />
-      <workItem from="1612276577754" duration="6741000" />
+      <workItem from="1612276577754" duration="11740000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -366,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612285472998</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Server-UpdateAftodAddBook">
+      <created>1612287191854</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1612287191854</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

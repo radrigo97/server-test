@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-essenceBook">
+    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAftor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/author/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/author/Model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/author/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/author/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/Model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/book/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/create.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +64,7 @@
       <recent name="C:\reactproject\server-test\src\home.js" />
     </key>
   </component>
-  <component name="RunManager" selected="Attach to Node.js/Chrome.Debug">
+  <component name="RunManager" selected="npm.start">
     <configuration name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
       <method v="2" />
     </configuration>
@@ -147,7 +144,9 @@
       <workItem from="1612114853005" duration="1207000" />
       <workItem from="1612145983399" duration="1982000" />
       <workItem from="1612148091187" duration="12000" />
-      <workItem from="1612148118852" duration="4411000" />
+      <workItem from="1612148118852" duration="4588000" />
+      <workItem from="1612178051664" duration="2620000" />
+      <workItem from="1612276577754" duration="4930000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -352,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612116419288</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Server-UpdateAftor">
+      <created>1612157110387</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1612157110387</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +391,8 @@
     <MESSAGE value="Server-baseSchemaCreate" />
     <MESSAGE value="Server-essenceBaseComplete" />
     <MESSAGE value="Server-essenceBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server-essenceBook" />
+    <MESSAGE value="Server-UpdateAftor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server-UpdateAftor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

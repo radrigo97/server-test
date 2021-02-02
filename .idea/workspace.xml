@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAftor">
+    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAftodAddBook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/author/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/author/Model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/book/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/create.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +147,7 @@
       <workItem from="1612148091187" duration="12000" />
       <workItem from="1612148118852" duration="4588000" />
       <workItem from="1612178051664" duration="2620000" />
-      <workItem from="1612276577754" duration="4930000" />
+      <workItem from="1612276577754" duration="6741000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -358,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612157110387</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Server-UpdateAftodAddBook">
+      <created>1612285472998</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1612285472998</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +400,8 @@
     <MESSAGE value="Server-essenceBaseComplete" />
     <MESSAGE value="Server-essenceBook" />
     <MESSAGE value="Server-UpdateAftor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server-UpdateAftor" />
+    <MESSAGE value="Server-UpdateAftodAddBook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server-UpdateAftodAddBook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

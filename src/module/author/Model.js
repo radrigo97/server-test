@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 const Model = new Schema({
   name: {
     type: String,
-    required: false,
+    required: true,
   },
   books: [
     {
-      type: mongoose.Schema.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: 'Book',
       required: false,
     },

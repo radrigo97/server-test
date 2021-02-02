@@ -4,13 +4,12 @@ import mongoose from 'mongoose';
 
 //1 - create Book and add Author Book
 export default function create(req, res) {
-  const _id = mongoose.Schema.ObjectId;
+  const _id = new mongoose.Types.ObjectId();
   const newBook = new Book({
     _id,
     name: req.body.name,
     author: req.body.author,
   });
-  console.log(req.body.author);
 
   //2 - update authorBook
   req.body.author.forEach((author) => {
@@ -18,6 +17,9 @@ export default function create(req, res) {
       .exec()
       .then((doc) => {
         doc.books = [_id];
+        doc.save().catch((e) => {
+          console.log(e);
+        });
         // res.status(200).json(result);
       })
       .catch((error) => {

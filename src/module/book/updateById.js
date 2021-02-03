@@ -3,7 +3,7 @@ import Book from './Model';
 export default function updateById(req, res) {
   const reqIdBook = req.params.bookId;
 
-  Book.updateOne({ _id: reqIdBook }, req.body)
+  Book.findByIdAndUpdate(reqIdBook, req.body)
     .exec()
     .then((result) => {
       res.status(200).json(result);

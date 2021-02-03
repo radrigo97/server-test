@@ -1,17 +1,15 @@
 import Book from './Model';
-import mongoose from 'mongoose';
 
 export default function updateById(req, res) {
-  const _id = new mongoose.Types.ObjectId();
-  const updateBook = new Book({
-    _id,
-    name: req.body.name,
-    author: req.body.author,
-  });
+  const reqIdBook = req.params.bookId;
 
-  updateBook
-      .save()
-      .then(())
-      .catch()
-
+  Book.updateOne({ _id: reqIdBook }, req.body)
+    .exec()
+    .then((result) => {
+      res.status(200).json(result);
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(400).json('update error');
+    });
 }

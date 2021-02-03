@@ -16,15 +16,15 @@ export default function create(req, res) {
     Author.findById(author)
       .exec()
       .then((doc) => {
-        doc.books = [_id];
+        doc.books = [...doc.books, _id];
         doc.save().catch((e) => {
-          console.log(e);
+          throw new Error(e);
         });
         // res.status(200).json(result);
       })
       .catch((error) => {
         console.log(error);
-        res.status(400).json('update error');
+        // res.status(400).json('update error');
       });
   });
 

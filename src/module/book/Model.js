@@ -9,7 +9,7 @@ const Model = new Schema({
   },
   author: [
     {
-      type: mongoose.Schema.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: 'Author',
       required: false,
     },

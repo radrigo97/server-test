@@ -2,6 +2,10 @@ import Book from './Model';
 
 export default function getAll(req, res) {
   Book.find()
+    .populate({
+      path: 'author',
+      select: 'name',
+    })
     .exec()
     .then((result) => {
       res.status(200).json(result);

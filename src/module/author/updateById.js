@@ -3,7 +3,7 @@ import Author from './Model';
 export default function updateById(req, res) {
   const reqById = req.params.authorId;
 
-  Author.updateOne({ _id: reqById }, req.body)
+  Author.findByIdAndUpdate(reqById, req.body)
     .exec()
     .then((result) => {
       res.status(200).json(result);

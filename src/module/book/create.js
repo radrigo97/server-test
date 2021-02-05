@@ -11,6 +11,9 @@ export default function create(req, res) {
     author: req.body.author,
   });
 
+  // const idAuthor = req.body.author;
+  // console.log(idAuthor);
+
   //2 - update authorBook
   req.body.author.forEach((author) => {
     Author.findById(author)
@@ -26,6 +29,21 @@ export default function create(req, res) {
         console.log(error);
         // res.status(400).json('update error');
       });
+  });
+
+  req.body.author.forEach((author) => {
+    Author.findById(author)
+      .exec()
+      .then((doc) => {
+        const update = doc.map((el) => {
+          if (el.length === Book.author) {
+            update.push(newBook);
+          } else {
+            return el;
+          }
+        });
+      })
+      .catch();
   });
 
   newBook

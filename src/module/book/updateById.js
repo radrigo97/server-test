@@ -5,8 +5,8 @@ export default function updateById(req, res) {
 
   Book.findByIdAndUpdate(reqIdBook, req.body)
     .exec()
-    .then((result) => {
-      res.status(200).json(result);
+    .then(() => {
+      res.status(200).json('Update');
     })
     .catch((error) => {
       console.log(error);

@@ -1,15 +1,9 @@
 import Book from './Model';
+import Author from '../author/Model';
 
 export default function updateById(req, res) {
   const reqIdBook = req.params.bookId;
+  const newAuthorList = [];
 
-  Book.findByIdAndUpdate(reqIdBook, req.body)
-    .exec()
-    .then(() => {
-      res.status(200).json('Update');
-    })
-    .catch((error) => {
-      console.log(error);
-      res.status(400).json('update error');
-    });
+
 }

@@ -151,7 +151,9 @@
       <workItem from="1612438515308" duration="7341000" />
       <workItem from="1612507837824" duration="1190000" />
       <workItem from="1612539074540" duration="9472000" />
-      <workItem from="1612594062174" duration="10488000" />
+      <workItem from="1612594062174" duration="11095000" />
+      <workItem from="1612684068105" duration="562000" />
+      <workItem from="1612713182196" duration="2201000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -419,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612551291505</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Server-UpdateAuthorAndBook">
+      <created>1612643306993</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1612643306994</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

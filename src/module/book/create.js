@@ -3,55 +3,40 @@ import Author from '../author/Model';
 import mongoose from 'mongoose';
 
 //1 - create Book and add Author Book
-export default function create(req, res) {
+export default async function create(req, res) {
   const _id = new mongoose.Types.ObjectId();
+  const authors = req.body.author;
+  const newAuthorList = [];
+
+  const updateAuthorList = authors.map((author) =>
+    Author.findByIdAndUpdate(author, { $addToSet: { books: _id } })
+      .exec()
+      .then((result) => {
+        if (result) {
+          newAuthorList.push(author);
+        } else {
+          console.log('error update author list');
+        }
+      })
+      .catch((err) => {
+        console.log('error');
+      })
+  );
+
+  await Promise.all(updateAuthorList);
+
   const newBook = new Book({
-    _id,
+    _id: _id,
     name: req.body.name,
-    author: req.body.author,
-  });
-
-  // const idAuthor = req.body.author;
-  // console.log(idAuthor);
-
-  //2 - update authorBook
-  req.body.author.forEach((author) => {
-    Author.findById(author)
-      .exec()
-      .then((doc) => {
-        doc.books = [...doc.books, _id];
-        doc.save().catch((e) => {
-          throw new Error(e);
-        });
-        // res.status(200).json(result);
-      })
-      .catch((error) => {
-        console.log(error);
-        // res.status(400).json('update error');
-      });
-  });
-
-  req.body.author.forEach((author) => {
-    Author.findById(author)
-      .exec()
-      .then((doc) => {
-        const update = doc.map((el) => {
-          if (el.length === Book.author) {
-            update.push(newBook);
-          } else {
-            return el;
-          }
-        });
-      })
-      .catch();
+    author: newAuthorList,
   });
 
   newBook
     .save()
     .then(() => {
-      res.status(200).json('Create');
+      res.status(200).json('create book');
     })
     .catch(() => {
-      res.status(400).json('Error create');
+      res.status(400).json('error create book');
     });
 }

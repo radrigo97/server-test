@@ -34,5 +34,5 @@ export default function update(req, res) {
     })
     .catch(() => {
       res.status(400).json('erroring');
-    });вфыв
+    });вфывыаыаыаы
 }

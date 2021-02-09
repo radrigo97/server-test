@@ -1,39 +1,38 @@
 import Author from './Model';
 import Book from '../book/Model';
 
-export default async function update(req, res) {
+export default function update(req, res) {
   const bookId = req.params.bookId;
   const authorId = req.body.author;
-  const newAuthorList = [];
+  const updateAuthorBook = [];
 
-  const updateAuthor = authorId.map((author) =>
-    Author.findByIdAndUpdate(author, { $addToSet: { books: bookId } })
-      .exec()
-      .then((result) => {
-        if (result) {
-          newAuthorList.push(author);
-        } else {
-          console.log(`error ${author} not add list`);
-        }
-      })
-      .catch((error) => {
-        console.log('update error list', error);
-      })
-  );
-
-  await Promise.all(updateAuthor);
-
-  const updatedBook = {
-    name: req.body.name,
-    author: newAuthorList,
-  };
-
-  Book.updateOne({ _id: bookId }, updatedBook)
+  Book.findById(bookId)
     .exec()
-    .then(() => {
-      res.status(200).json('book update author');
+    .then((doc) => {
+      Author.updateOne(authorId)
+        .exec()
+        .then((doc) => {
+          updateAuthorBook.push(doc);
+        })
+        .catch(() => {
+          console.log('error');
+        });
     })
     .catch(() => {
-      res.status(400).json('error book update author');
+      console.log('update error');
+    });
+
+  const updateBook = {
+    name: req.body.name,
+    author: updateAuthorBook,
+  };
+
+  Book.updateOne({ _id: bookId }, updateBook)
+    .exec()
+    .then(() => {
+      res.status(200).json('ok');
+    })
+    .catch(() => {
+      res.status(400).json('erroring');
     });
 }

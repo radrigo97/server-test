@@ -1,34 +1,27 @@
 import Book from './Model';
-import Author from '../author/Model';
 import mongoose from 'mongoose';
+import Author from '../author/Model';
 
-//1 - create Book and add Author Book
 export default async function create(req, res) {
   const _id = new mongoose.Types.ObjectId();
-  const authors = req.body.author;
-  const newAuthorList = [];
-
-  const updateAuthorList = authors.map((author) =>
-    Author.findByIdAndUpdate(author, { $addToSet: { books: _id } })
-      .exec()
-      .then((result) => {
-        if (result) {
-          newAuthorList.push(author);
-        } else {
-          console.log('error update author list');
-        }
-      })
-      .catch((err) => {
-        console.log('error');
-      })
-  );
-
-  await Promise.all(updateAuthorList);
-
   const newBook = new Book({
-    _id: _id,
+    _id,
     name: req.body.name,
-    author: newAuthorList,
+    author: req.body.author,
+  });
+
+  req.body.author.forEach((author) => {
+    Author.findById(author)
+      .exec()
+      .then((doc) => {
+        doc.books = [...doc.books, _id];
+        doc.save().catch((e) => {
+          throw new Error(e);
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   });
 
   newBook

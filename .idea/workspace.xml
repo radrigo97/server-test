@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAuthorAndBook">
-      <change afterPath="$PROJECT_DIR$/src/module/book/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/Routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/book/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/updateById.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/book/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/update.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="C:\reactproject\server-test\src\home.js" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Attach to Node.js/Chrome.Debug">
     <configuration name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
       <method v="2" />
     </configuration>
@@ -166,7 +164,8 @@
       <workItem from="1612684068105" duration="562000" />
       <workItem from="1612713182196" duration="2201000" />
       <workItem from="1612768322111" duration="281000" />
-      <workItem from="1612768620564" duration="20685000" />
+      <workItem from="1612768620564" duration="29274000" />
+      <workItem from="1612901110281" duration="1021000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -441,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612643306994</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Server-UpdateAuthorAndBook">
+      <created>1612809709073</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612809709073</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,6 +493,11 @@
           <url>file://$PROJECT_DIR$/.eslintrc</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/module/book/update.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

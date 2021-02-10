@@ -1,38 +1,47 @@
 import Author from './Model';
 import Book from '../book/Model';
 
-export default function update(req, res) {
+export default async function update(req, res) {
   const bookId = req.params.bookId;
   const authorId = req.body.author;
-  const updateAuthorBook = [];
+  let updateAuthorBook = [];
 
   Book.findById(bookId)
     .exec()
-    .then((doc) => {
-      Author.updateOne(authorId)
-        .exec()
-        .then((doc) => {
-          updateAuthorBook.push(doc);
-        })
-        .catch(() => {
-          console.log('error');
-        });
-    })
-    .catch(() => {
-      console.log('update error');
+    .then(async (doc) => {
+      await authorId.map((author) => {
+        if (!doc.author.includes(author)) {
+          Author.findByIdAndUpdate(author, { $addToSet: { books: bookId } })
+            .exec()
+            .then((doc) => {
+              if (doc) {
+                updateAuthorBook.push(doc);
+              } else {
+                console.log('error update');
+              }
+            })
+            .catch(() => {
+              console.log('error add book in author');
+            });
+        } else {
+          updateAuthorBook.push(author);
+        }
+        return null;
+      });
     });
 
+  console.log(updateAuthorBook);
+
   const updateBook = {
-    name: req.body.name,
     author: updateAuthorBook,
   };
 
   Book.updateOne({ _id: bookId }, updateBook)
     .exec()
     .then(() => {
-      res.status(200).json('ok');
+      console.log('Update Book complete');
     })
     .catch(() => {
-      res.status(400).json('erroring');
-    });вфывыаыаыаы
+      console.log('Update book error');
+    });
 }

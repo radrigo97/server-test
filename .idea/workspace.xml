@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAuthorAndBook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/book/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/update.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +164,9 @@
       <workItem from="1612768322111" duration="281000" />
       <workItem from="1612768620564" duration="29274000" />
       <workItem from="1612901110281" duration="1132000" />
-      <workItem from="1612973655354" duration="3956000" />
+      <workItem from="1612973655354" duration="4920000" />
+      <workItem from="1613012904785" duration="1198000" />
+      <workItem from="1613045828961" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -468,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612906332528</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Server-UpdateAuthorAndBook">
+      <created>1612979392844</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1612979392844</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,12 +522,6 @@
           <url>file://$PROJECT_DIR$/.eslintrc</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/module/book/update.js</url>
-          <line>32</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

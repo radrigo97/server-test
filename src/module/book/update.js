@@ -1,47 +1,79 @@
-import Author from './Model';
-import Book from '../book/Model';
-
+import Book from './Model';
+import Author from '../author/Model';
 export default async function update(req, res) {
   const bookId = req.params.bookId;
-  const authorId = req.body.author;
-  let updateAuthorBook = [];
+  const newAuthorsList = [];
 
-  Book.findById(bookId)
+  await Book.findById(bookId)
     .exec()
     .then(async (doc) => {
-      await authorId.map((author) => {
-        if (!doc.author.includes(author)) {
-          Author.findByIdAndUpdate(author, { $addToSet: { books: bookId } })
+      //loop through list of authors that came in request and if author not found in current list of authors add book to him
+
+      const promise1 = req.body.author.map((author) => {
+        if (!doc.author.includes(author.toString())) {
+          return Author.findOneAndUpdate(
+            { _id: author },
+            { $addToSet: { books: bookId } }
+          )
             .exec()
             .then((doc) => {
               if (doc) {
-                updateAuthorBook.push(doc);
+                console.log('books list in author collection updated');
+                newAuthorsList.push(author);
               } else {
-                console.log('error update');
+                console.log('books list not updated');
               }
             })
-            .catch(() => {
-              console.log('error add book in author');
+            .catch((error) => {
+              console.log('error in catch of author find oneAndUpdate');
+              //updatedBook.author = authors.filter((el) => el !== author);
             });
         } else {
-          updateAuthorBook.push(author);
+          newAuthorsList.push(author);
         }
-        return null;
       });
+
+      //loop through the current list of authors and if author not found in incoming list remove book from him
+
+      const promise2 = doc.author.map((author) => {
+        if (!req.body.author.includes(author.toString())) {
+          //new list of authors not include this author => remove book from him
+          return Author.findOneAndUpdate(
+            { _id: author },
+            { $pull: { books: bookId } }
+          )
+            .exec()
+            .then((doc) => {
+              if (doc) {
+                console.log(
+                  'books list in author collection updated  - book removed from list!'
+                );
+              } else {
+                console.log('books list not updated!');
+              }
+            })
+            .catch((error) => {
+              console.log('error in catch of author find oneAndUpdate');
+              //updatedBook.author = authors.filter((el) => el !== author);
+            });
+        }
+      });
+      await Promise.all([...promise1, ...promise2]);
     });
 
-  console.log(updateAuthorBook);
-
-  const updateBook = {
-    author: updateAuthorBook,
+  const updatedBook = {
+    name: req.body.name,
+    author: newAuthorsList,
   };
 
-  Book.updateOne({ _id: bookId }, updateBook)
+  Book.updateOne({ _id: bookId }, updatedBook)
     .exec()
-    .then(() => {
-      console.log('Update Book complete');
+    .then((result) => {
+      console.log(updatedBook, 'book updated!!!!');
+      res.status(200).json(result);
     })
-    .catch(() => {
-      console.log('Update book error');
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json('Book update error');
     });
 }

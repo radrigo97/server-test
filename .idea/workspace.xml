@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAuthorAndBook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/book/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/update.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <recent name="C:\reactproject\server-test\src\home.js" />
     </key>
   </component>
-  <component name="RunManager" selected="Attach to Node.js/Chrome.Debug">
+  <component name="RunManager" selected="npm.start">
     <configuration name="Debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
       <method v="2" />
     </configuration>
@@ -166,7 +167,8 @@
       <workItem from="1612901110281" duration="1132000" />
       <workItem from="1612973655354" duration="4920000" />
       <workItem from="1613012904785" duration="1198000" />
-      <workItem from="1613045828961" duration="606000" />
+      <workItem from="1613045828961" duration="692000" />
+      <workItem from="1613122318568" duration="4726000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -476,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612979392844</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Server-UpdateAuthorAndBook">
+      <created>1613061605243</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1613061605243</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,6 @@
 import Book from './Model';
 
-export default function getAll(req, res) {
+export default function search(req, res) {
   Book.find()
     .populate({
       path: 'author',

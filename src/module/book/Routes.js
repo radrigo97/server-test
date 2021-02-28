@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import deleteAll from './deleteAll';
 import deleteById from './deleteById';
-import getAll from './getAll';
+import search from './search';
 import getById from './getById';
 import create from './create';
 import update from './update';
@@ -9,7 +9,7 @@ import update from './update';
 const router = Router();
 
 router.post('/', create);
-router.get('/', getAll);
+router.post('/search', search);
 router.get('/:bookId/', getById);
 router.patch('/:bookId/', update);
 router.delete('/:bookId/', deleteById);

@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateAuthorAndBook">
+    <list default="true" id="1657b178-327c-4f2b-83a2-08e0fd69f0cc" name="Default Changelist" comment="Server-UpdateBook Complete!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/author/Model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/author/Model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/author/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/author/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/book/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/book/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/book/getAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module/book/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/book/update.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTTP Public Environment File" />
       </list>
     </option>
   </component>
@@ -41,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/module/author" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../um" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -168,7 +176,17 @@
       <workItem from="1612973655354" duration="4920000" />
       <workItem from="1613012904785" duration="1198000" />
       <workItem from="1613045828961" duration="692000" />
-      <workItem from="1613122318568" duration="4726000" />
+      <workItem from="1613122318568" duration="7299000" />
+      <workItem from="1613147600672" duration="34000" />
+      <workItem from="1614070901613" duration="1994000" />
+      <workItem from="1614148803527" duration="5094000" />
+      <workItem from="1614222827108" duration="2228000" />
+      <workItem from="1614250587794" duration="1430000" />
+      <workItem from="1614270132911" duration="6776000" />
+      <workItem from="1614325423208" duration="2712000" />
+      <workItem from="1614444155215" duration="1859000" />
+      <workItem from="1614447258853" duration="3397000" />
+      <workItem from="1614494589054" duration="4129000" />
     </task>
     <task id="LOCAL-00001" summary="Server-eslint">
       <created>1611057404361</created>
@@ -485,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613061605243</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Server-UpdateBook Complete!">
+      <created>1613127338163</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1613127338163</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +547,8 @@
     <MESSAGE value="Server-UpdateAftodAddBook" />
     <MESSAGE value="Server-UpdateAftorAddBook" />
     <MESSAGE value="Server-UpdateAuthorAndBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server-UpdateAuthorAndBook" />
+    <MESSAGE value="Server-UpdateBook Complete!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server-UpdateBook Complete!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

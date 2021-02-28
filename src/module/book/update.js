@@ -13,7 +13,7 @@ export default async function update(req, res) {
         if (!doc.author.includes(author.toString())) {
           return Author.findOneAndUpdate(
             { _id: author },
-            { $addToSet: { books: bookId } }
+            { $addToSet: { book: bookId } }
           )
             .exec()
             .then((doc) => {
@@ -40,7 +40,7 @@ export default async function update(req, res) {
           //new list of authors not include this author => remove book from him
           return Author.findOneAndUpdate(
             { _id: author },
-            { $pull: { books: bookId } }
+            { $pull: { book: bookId } }
           )
             .exec()
             .then((doc) => {
